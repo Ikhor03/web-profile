@@ -1,38 +1,124 @@
-.App {
+.callme{
+  height: 650px;
+  background-image: url(asset/me3.JPG);
+  background-size: cover;
+  background-position: center;
+}
+.callme h1{
+  font-family: calisto MT;
+  font-size:64px;
+}
+
+.callme p{
+  margin-top: 25px;
+  font-size: 12px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.callme .btn{
+  bottom:  20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.copy{
+  transform: rotate(-90deg);
+  font-size: 10px;
+  width: 100px;
+}
+
+.kata{
+  font-family: calisto MT;
+  font-size: 20px;
+  mix-blend-mode:hard-light;
+}
+
+.photography{
+  height: 650px;
+  background-image: url(asset/Ade2.JPG);
+  background-size: cover;
+}
+
+.photography h1{
+  font-family: calisto MT;
+  letter-spacing: 10px;
+  font-size:110px;
+}
+
+
+
+.photography .btn{
+  bottom:  20px;
+  left:40%;
+}
+
+.over-img{
+  background-image: url(asset/me5.JPG);
+  background-size: cover;
+  width: 400px;
+  height: 300px;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+.img-insipire{
+  background-image: url(asset/me1.JPG);
+  background-size: cover;
+  background-position: center;
+  width:700px;
+  height:300px;
+
+  position: absolute;
+  top:60%;
+  left:0;
+  z-index: -99;
+}
+
+.footer{
+  font-family: calisto MT;
+  color: black;
+}
+
+.photography p{
+  display: none;
+  font-family: calisto MT;
+  height: 100%;
+  letter-spacing: 15px;
+  font-size:35px;
+  transform: rotate(-90deg);
+}
+
+@media only screen and (max-width: 992px){
+  .photography h1{
+      font-size: 75px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 768px){
+  .photography h1{
+      display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .photography p{
+      display: flex;
+  }
+
+  .img-insipire{
+      position: static;
+      top:0;
+      left:0;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  .kata{
+      font-size: 13px !important;
+  }
+
+  .footer p{
+      font-size: 10px;
+  }
+
+  .footer span{
+      font-size: larger;
   }
 }
