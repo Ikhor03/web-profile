@@ -1,13 +1,10 @@
 import './App.css';
-import { Carousel } from 'react-bootstrap'
+import { Carousel, Button, Form, Modal } from 'react-bootstrap'
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Modal from 'react-bootstrap/Modal';
 
 
 
-function App() {
+function Home() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -136,4 +133,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
